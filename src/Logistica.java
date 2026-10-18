@@ -12,8 +12,7 @@ import vistas.EnvioVista;
 public class Logistica {
 
     public static void main(String[] args) {
-        // Fábricas disponibles. Para agregar Express solo se añade una línea:
-        // fabricas.put("Express", new ExpressFactory());
+        
         Map<String, EnvioFactory> fabricas = new LinkedHashMap<>();
         fabricas.put("Terrestre", new TerrestreFactory());
         fabricas.put("Aéreo", new AereoFactory());
