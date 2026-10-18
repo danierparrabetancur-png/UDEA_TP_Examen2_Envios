@@ -39,7 +39,7 @@ public class EnvioVista extends JFrame {
         JToolBar tb = new JToolBar();
 
 
-        // btnAgregar.setIcon(new ImageIcon(getClass().getResource("/iconos/Agregar.png")));
+
         btnAgregar = new JButton("Agregar envío");
         btnAgregar.setToolTipText("Agregar envío");
         tb.add(btnAgregar);
@@ -201,7 +201,7 @@ public class EnvioVista extends JFrame {
                     envio.getCliente(),
                     envio.getPeso(),
                     envio.getDistancia(),
-                    envio.calcularTarifa() // polimorfismo
+                    envio.calcularTarifa() 
             });
         }
     }
