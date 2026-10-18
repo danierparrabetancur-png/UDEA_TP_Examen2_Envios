@@ -29,13 +29,13 @@ public abstract class Envio {
         return distancia;
     }
 
-    // Nombre del medio de transporte (se muestra en el listado)
+    // Nombre del medio de transporte 
     public abstract String getTipo();
 
-    // Cada tipo de envío calcula su tarifa (polimorfismo)
+    // Cada tipo de envío calcula su tarifa 
     public abstract double calcularTarifa();
 
-    // Fórmula común para no repetir código en las subclases
+    // para no repetir código en las subclases
     protected double calcularTarifa(double tarifaBasePorKm, double recargoPorKg) {
         return distancia * tarifaBasePorKm + peso * recargoPorKg;
     }
