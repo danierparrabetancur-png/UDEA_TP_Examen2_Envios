@@ -11,7 +11,7 @@ public class EnvioControlador {
 
     private final EnvioVista vista;
     private final EnvioServicio servicio;
-    // Tipo de envío -> fábrica que lo crea
+    // Tipo de envío ==> fábrica que lo crea
     private final Map<String, EnvioFactory> fabricas;
 
     public EnvioControlador(EnvioVista vista, EnvioServicio servicio, Map<String, EnvioFactory> fabricas) {
